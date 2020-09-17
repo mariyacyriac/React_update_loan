@@ -1,0 +1,46 @@
+Rect  testing -> jest library / framework 
+
+
+         npm install --save-dev jest
+
+
+
+
+
+//value = {JSON.stringify(props.location.loanDetailProps.loandetails.lienType)}
+
+                                    //value = {JSON.stringify(props.location.loanDetailProps.loandetails.loanTerm)}
+                                   // value = {JSON.stringify(props.location.loanDetailProps.loandetails.loanAmount)}
+                                   //value = {JSON.stringify(props.location.loanDetailProps.loandetails.loanNumber)}
+                                   //value = {JSON.stringify(props.location.loanDetailProps.loandetails.legalDocuments)}
+                                  // value = {JSON.stringify(props.location.loanDetailProps.loandetails.zipCode).replaceAll("\"","")}
+                                  //  value = {JSON.stringify(props.location.loanDetailProps.loandetails.city).replaceAll("\"","")}
+                                  //  value = {JSON.stringify(props.location.loanDetailProps.loandetails.addressLine2).replaceAll("\"","")}
+                                   //value = {JSON.stringify(props.location.loanDetailProps.loandetails.addressLine1).replaceAll("\"","")}
+                                  // value = {JSON.stringify(props.location.loanDetailProps.loandetails.borrowerName).replaceAll("\"","")}
+
+
+
+
+loandetails props FromSearch :: {
+"history":{
+"length":50,
+"action":"PUSH",
+"location":{
+"pathname":"/update",
+"loanDetailProps":{"loandetails":{"loanAmount":"80000","loanTerm":"1.5","lienType":"lien type ","lienId":"567","loanNumber":"123"}},
+"search":"","hash":"","key":"gq2vgi"
+}
+},
+
+"location":{
+"pathname":"/update",
+"loanDetailProps":{
+"loandetails":{"loanAmount":"80000","loanTerm":"1.5","lienType":"lien type ","lienId":"567","loanNumber":"123"}
+},
+"search":"","hash":"","key":"gq2vgi"
+},
+
+"match":{"path":"/update","url":"/update","isExact":true,"params":{}}
+
+}
