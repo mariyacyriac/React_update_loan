@@ -18,7 +18,7 @@ const useForm = (validate, loadLoanDetailsFrom) => {
         ...deafultLoanDetails
     })
 
-    console.log("loanDetails  :: " + JSON.stringify(loanDetails))
+   // console.log("loanDetails  :: " + JSON.stringify(loanDetails))
 
 
 
@@ -50,7 +50,7 @@ const useForm = (validate, loadLoanDetailsFrom) => {
 
         if (Object.keys(errors).length === 0 && isSubmited) {
             setIsSubmitted(false);
-            console.log("submitted ::: going to save in db");
+           // console.log("submitted ::: going to save in db");
             localStorage.setItem("auth", "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzYW1wbGVVc2VyTmFtZSIsImlhdCI6MTYwMDMzMDg0OCwiZXhwIjoxNjAwMzMxODQ4fQ.idgrZZ9xWyKmKt4BkkyBuktbPacqdUzQPc_bdA6GkQU");
             let authcode = localStorage.getItem("auth");
             console.log("token from local storage :: " + authcode);
@@ -81,14 +81,14 @@ const useForm = (validate, loadLoanDetailsFrom) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log('loan details submitted -->:', loanDetails);
+       // console.log('loan details submitted -->:', loanDetails);
 
         //handle errors
         setErrors(validate(loanDetails));
 
-        console.log('errors : ', errors);
+      //  console.log('errors : ', errors);
         setIsSubmitted(true);
-        console.log('is submitted ::' + isSubmited);
+       // console.log('is submitted ::' + isSubmited);
 
     }
 

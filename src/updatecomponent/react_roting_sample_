@@ -127,3 +127,10 @@ class LoginLayout extends Component {
                     path="/update"
                     component={UpdateForm} 
                 />
+				
+				
+				
+				
+https://spectrum.chat/react/help/how-do-you-test-components-that-use-routecomponentprops~495fe95b-6925-4e7f-bfe8-65a737c5d24e
+https://stackoverflow.com/questions/48949479/passing-an-object-as-prop-in-react-router-link/48949836
+https://dev.to/austinbh/testing-forms-in-react-using-enzyme-and-jest-2983

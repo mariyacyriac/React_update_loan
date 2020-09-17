@@ -9,7 +9,7 @@ const UpdateForm = (props) => {
 
     //const { handleChange, handleSubmit, errors ,resetAll, setDefaultVAlues} = useForm(validate); //, resetAll
 
-   //  console.log("loandetails props FromSearch :: " + JSON.stringify(props.location.loanDetailProps.loandetails)); 
+   // console.log("props.location  from  test :::: " + JSON.stringify(props.location)); 
 
     const [loadLoanDetailsFrom, setLoadLoanDetailsFrom] = useState(
         props.location.loanDetailProps.loandetails
@@ -17,7 +17,7 @@ const UpdateForm = (props) => {
 
     const { handleChange, handleSubmit, errors ,resetAll, setDefaultVAlues} = useForm(validate, loadLoanDetailsFrom);
 
-    console.log("loadLoanDetailsFrom ::: " + JSON.stringify(loadLoanDetailsFrom));
+  //  console.log("loadLoanDetailsFrom ::: " + JSON.stringify(loadLoanDetailsFrom));
 
     return (
         <div>
