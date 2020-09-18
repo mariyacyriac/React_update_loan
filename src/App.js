@@ -1,6 +1,9 @@
 import React from 'react';
 import './App.css';
 import UpdateForm from './updatecomponent/UpdateForm';
+import AppRouter from '../src/roters/AppRouter'
+
+
 import {
   BrowserRouter as Router,
   Link,
@@ -27,6 +30,9 @@ function App() {
 
   return (
 
+<div>
+    <AppRouter/>
+
     <Router>
       <div className="App">
 
@@ -48,6 +54,7 @@ function App() {
 
       </div>
     </Router>
+    </div>
   );
 }
 

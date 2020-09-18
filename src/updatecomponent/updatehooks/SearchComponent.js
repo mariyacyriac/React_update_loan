@@ -1,24 +1,14 @@
 
-import React from 'react';
-// const SearchComponent = () => {
+import {React} from 'react';
 
-//     retrun (
-//         <div>
-//         <h2> Search Component!!  </h2>
-//         </div>
-//     );
-// };
 
-class SearchComponent extends React.Component {
+const SearchComponent = () => {
+  return (
+<div>
+  <h2>Search component!</h2>
+</div>
+  );
+}
 
-    render () {
-       return (
-         <div >
-              Search component 
-         </div>
-       )
-     }
-   
-   }
 
 export default SearchComponent;

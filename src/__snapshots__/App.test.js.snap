@@ -213,6 +213,7 @@ exports[`test for rendering the update Compoent  should render the form 1`] = `
             </button>
             <button
               className="btn btn-danger"
+              onClick={[Function]}
               style={
                 Object {
                   "margin": "5px",

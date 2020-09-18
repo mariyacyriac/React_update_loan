@@ -5,14 +5,14 @@ export default function validateUpdateForm(loandetails) {
     let errors = [];
     let { loanAmount, loanTerm, lienType, lienId } = loandetails;
 
-
     if (loanAmount.length === 0) {
         errors.loanAmount = 'Loan Amount is required ';
     } else if (loanAmount < 500000) {
         errors.loanAmount = 'Loan Amount should be greater than 500000 ';
     }
-    else if (!/^\d+$/.test(loanAmount)) {
-        errors.loanAmount = 'Loan Amount should be a number ';
+    //else if (!/^\d+$/.test(loanAmount)) {
+    else if (!/^[0-9]+\.[0-9]+$/.test(loanAmount)) {
+        errors.loanAmount = 'Loan Amount should be a number of format 0.0';
     }
 
     if (loanTerm.length === 0) {

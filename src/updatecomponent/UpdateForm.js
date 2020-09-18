@@ -1,9 +1,10 @@
 
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import useForm from './updatehooks/useForm';
 import validate from './updatehooks/validateUpdateForm';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Redirect, useHistory } from 'react-router-dom';
 
 const UpdateForm = (props) => {
 
@@ -15,7 +16,9 @@ const UpdateForm = (props) => {
         props.location.loanDetailProps.loandetails
     );
 
-    const { handleChange, handleSubmit, errors ,resetAll, setDefaultVAlues} = useForm(validate, loadLoanDetailsFrom);
+    const { handleChange, handleSubmit, errors } = useForm(validate, loadLoanDetailsFrom);
+
+    const history = useHistory();
 
   //  console.log("loadLoanDetailsFrom ::: " + JSON.stringify(loadLoanDetailsFrom));
 
@@ -159,7 +162,7 @@ const UpdateForm = (props) => {
                             </div>
                             <div className="form-group text-center">
                                 <button className="btn btn-primary" style={{ margin: "5px" }}>Submit</button>
-                                <button className="btn btn-danger" style={{ margin: "5px" }}  >Cancel</button>
+                                <button className="btn btn-danger" onClick={()=> { return  history.push("/Search")} } npstyle={{ margin: "5px" }}  >Cancel</button>
 
                             </div>
                         </form>
